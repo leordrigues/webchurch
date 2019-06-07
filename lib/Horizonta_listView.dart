@@ -8,7 +8,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold( 
       appBar: AppBar(
-        centerTitle: true,
+        centerTitle: true,        
         backgroundColor: Colors.teal, //coloquei uma cor no appbar -forçada
         title: Text(
           'Aplicativo Igreja',                  
@@ -16,8 +16,8 @@ class MainScreen extends StatelessWidget {
         ),
       ),
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-        height: MediaQuery.of(context).size.height * 0.45,
+        padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 0.0),
+        height: MediaQuery.of(context).size.height * 0.47, 
         child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: numbers.length,

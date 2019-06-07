@@ -8,7 +8,7 @@ class Group extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var boxDecoration = BoxDecoration(          
-          borderRadius: BorderRadius.circular(25.0),
+          borderRadius: BorderRadius.circular(19.0), //borda no objeto
           color: color,
           boxShadow: <BoxShadow>[  //COLOCAR UMA SOMBRA NO OBJETO 
             BoxShadow(

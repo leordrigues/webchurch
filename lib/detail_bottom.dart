@@ -12,7 +12,7 @@ class DetailBottom extends StatelessWidget {
               padding: const EdgeInsets.only(bottom: 50,),            
               scrollDirection: Axis.horizontal,
               children: <Widget>[ 
-                Group(title: "Josi",color: Colors.orange, ),
+                Group(title: "Ola",color: Colors.orange, ),
                 Group(title: "Estou",color: Colors.green,),
                 Group(title: "Testando",color: Colors.indigo,),
                 Group(title: "O App",color: Colors.blue,),

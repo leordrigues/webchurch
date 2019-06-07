@@ -7,17 +7,17 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold( 
-      appBar: AppBar(
-        centerTitle: true,        
-        backgroundColor: Colors.teal, //coloquei uma cor no appbar -forçada
-        title: Text(
-          'Aplicativo Igreja',                  
-          textAlign: TextAlign.center,
-        ),
-      ),
+    //  appBar: AppBar(
+      //  centerTitle: true,        
+        backgroundColor: Color(0xFFDAE8F5), //coloquei uma cor no appbar -forçada
+        //title: Text(
+          //'Aplicativo Igreja',                  
+          //textAlign: TextAlign.center,
+        //),
+      //),
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 0.0),
-        height: MediaQuery.of(context).size.height * 0.47, 
+        height: MediaQuery.of(context).size.height * 0.60, 
         child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: numbers.length,
@@ -27,7 +27,7 @@ class MainScreen extends StatelessWidget {
                 child: Card(
                   shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(19.0)), //circular o Container
-                  color: Color(0xFF4E5685), //quero essa cor #4E5685
+                  color: Color(0xFF4E5685), //quero essa cor #4E5685                
                   child: Container(
                     child: Center(
                         child: Text(

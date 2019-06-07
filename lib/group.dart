@@ -21,7 +21,7 @@ class Group extends StatelessWidget {
           //width: 0.5,
           );
     return Container(
-          width: 90,
+          width: 120,
           margin: const EdgeInsets.symmetric(horizontal: 3), //Separação das colunas
           decoration: boxDecoration,
       child: Text(

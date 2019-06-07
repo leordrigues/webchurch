@@ -16,14 +16,14 @@ class MainScreen extends StatelessWidget {
         //),
       //),
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 25.0),
-        height: MediaQuery.of(context).size.height * 0.65, 
+        padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 30.0),
+        height: MediaQuery.of(context).size.height * 0.66, 
         child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: numbers.length,
             itemBuilder: (context, index) {
               return Container(
-                width: MediaQuery.of(context).size.width * 0.7,
+                width: MediaQuery.of(context).size.width * 0.9,
                 child: Card(
                   shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(19.0)), //circular o Container

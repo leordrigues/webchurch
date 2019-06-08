@@ -34,7 +34,7 @@ class MainScreen extends StatelessWidget {
                   child: Container(                      
                     //coloar imagem externa
                     decoration: BoxDecoration(
-                        image: DecorationImage(  
+                        image: DecorationImage(
                             image: AssetImage("assets/imag1.jpeg"))),
                   ),
                 ),

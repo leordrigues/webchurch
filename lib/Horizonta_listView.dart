@@ -31,10 +31,10 @@ class MainScreen extends StatelessWidget {
                       borderRadius:
                           BorderRadius.circular(19.0)), //circular o Container
                   color: Color(0xFF4E5685), //quero essa cor #4E5685
-                  child: Container(
+                  child: Container(                      
                     //coloar imagem externa
                     decoration: BoxDecoration(
-                        image: DecorationImage(
+                        image: DecorationImage(  
                             image: AssetImage("assets/imag1.jpeg"))),
                   ),
                 ),

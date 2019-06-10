@@ -29,7 +29,7 @@ class MainScreen extends StatelessWidget {
                 child: Card(
                   shape: RoundedRectangleBorder(
                       borderRadius:
-                          BorderRadius.circular(19.0)), //circular o Container
+                          BorderRadius.circular(19.0)), //circular oo Container
                   color: Color(0xFF4E5685), //quero essa cor #4E5685
                   child: Container(                      
                     //coloar imagem externa

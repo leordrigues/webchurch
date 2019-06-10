@@ -1,5 +1,4 @@
 import 'dart:ui';
-//espera
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -31,7 +30,7 @@ class MainScreen extends StatelessWidget {
                       borderRadius:
                           BorderRadius.circular(19.0)), //circular o Container
                   color: Color(0xFF4E5685), // Quero essa cor #4E5685
-                  child: Container(                      
+                  child: Container(                     
                     //coloar imagem externa
                     decoration: BoxDecoration(
                         image: DecorationImage(                          

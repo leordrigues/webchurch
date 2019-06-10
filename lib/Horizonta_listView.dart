@@ -36,7 +36,7 @@ class MainScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                         image: DecorationImage(                          
                             image: AssetImage("assets/imag1.jpeg",),
-                            fit: BoxFit.fill             //Coloquei Borda na imageemmm                            
+                            fit: BoxFit.fill             //Coloquei Borda na imageem                            
                             )),
                   ),
                 ),

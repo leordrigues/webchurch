@@ -18,13 +18,8 @@ class MainScreen extends StatelessWidget {
       //),
       //),
       body: Container(
-<<<<<<< HEAD
-        padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 25.0),
-        height: MediaQuery.of(context).size.height * 0.66, 
-=======
         padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 30.0),
         height: MediaQuery.of(context).size.height * 0.65,
->>>>>>> cccd5000538b6a72c8ba6897d71b5b13bf30db78
         child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: numbers.length,

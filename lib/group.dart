@@ -21,15 +21,15 @@ class Group extends StatelessWidget {
           //width: 0.5,
           );
     return Container(
-          width: 90,
+          width: 120,
           margin: const EdgeInsets.symmetric(horizontal: 3), //Separação das colunas
           decoration: boxDecoration,
       child: Text(
         title,
         style: TextStyle(
-            fontSize: 15.0, fontWeight: FontWeight.w300, color: Colors.white),
+            fontSize: 19.0, fontWeight: FontWeight.w300, color: Colors.white),
       ),
-      alignment: Alignment(0.0, 0.0),
+      alignment: Alignment(0.0, 0.5),
     );
   }
 }

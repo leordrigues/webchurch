@@ -17,7 +17,7 @@ class DetailBottom extends StatelessWidget {
                 Group(title: "Testando",color: Color(0xFF353A50),),
                 Group(title: "O App",color: Color(0xFF27337D),),
                 Group(title: "Church",color: Color(0xFFFE5440),),
-                //Group(title: "abcd",color: Colors.yellow,),
+                Group(title: "abcd",color: Colors.yellow,),
               ],
             ));
   }

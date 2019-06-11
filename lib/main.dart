@@ -1,6 +1,8 @@
 import 'package:app_igreja/Horizonta_listView.dart';
 import 'package:app_igreja/detail_bottom.dart';
+import 'package:app_igreja/mainmenu.dart';
 import 'package:flutter/material.dart';
+import 'mainmenu.dart';
 
 void main() => runApp(MyApp());
 
@@ -42,7 +44,11 @@ class MyHomePage extends StatelessWidget {
                 Icons.settings,
                 color: Colors.grey,
               ),
-              onPressed: () {},
+              onPressed: () {
+                 Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
+              return MainMenu();
+            }));
+              },
             ),
             IconButton(
               icon: Icon(

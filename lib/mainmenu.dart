@@ -1,36 +1,18 @@
 import 'dart:collection';
 import 'package:flutter/scheduler.dart';
-import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/foundation.dart';
 
-void main() {
-  runApp(new MyApp());
-}
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return new MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: new ThemeData(
-        primarySwatch: Colors.orange,
-      ),
-      home: new MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget{
+class MainMenu extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('Grid Demo'),
-      ),
+      //appBar: new AppBar(
+        //title: new Text('Tela Nova'),
+      //),
       body: new GridView.count(
         crossAxisCount: 4,
         children: new List<Widget>.generate(12, (index) {

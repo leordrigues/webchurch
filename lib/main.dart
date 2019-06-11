@@ -3,6 +3,7 @@ import 'package:app_igreja/detail_bottom.dart';
 import 'package:app_igreja/mainmenu.dart';
 import 'package:flutter/material.dart';
 import 'mainmenu.dart';
+import 'celula.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,7 +31,12 @@ class MyHomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.green,
         child: const Icon(Icons.home),
-        onPressed: () {},
+        onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (BuildContext context) {
+                  return MainMenu(); //chamando a tela menu
+                }));
+              },
       ),
       bottomNavigationBar: BottomAppBar(
         shape: CircularNotchedRectangle(),
@@ -45,17 +51,23 @@ class MyHomePage extends StatelessWidget {
                 color: Colors.grey,
               ),
               onPressed: () {
-                 Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-              return MainMenu();
-            }));
+                //Navigator.push(context,
+                  //  MaterialPageRoute(builder: (BuildContext context) {
+                  //return MainMenu(); //chamando a tela Configuracao
+                //}));
               },
             ),
             IconButton(
               icon: Icon(
-                Icons.alarm,
+                Icons.people,
                 color: Colors.grey,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (BuildContext context) {
+                  return Celula(); //chamando a tela celula
+                }));
+              },
             ),
             Expanded(child: new SizedBox()),
             IconButton(
@@ -75,7 +87,8 @@ class MyHomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: Stack(  //COLOCAR UMA PILHA - PARTE DE CIMA APP
+      body: Stack(
+        //COLOCAR UMA PILHA - PARTE DE CIMA APP
         children: <Widget>[
           Align(
             alignment: Alignment.topCenter, //ALINHAMENTO GRUPOS

@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/foundation.dart';
 
-
 class MainMenu extends StatelessWidget{
   @override
   Widget build(BuildContext context){
@@ -14,11 +13,11 @@ class MainMenu extends StatelessWidget{
         //title: new Text('Tela Nova'),
       //),
       body: new GridView.count(
-        crossAxisCount: 4,
-        children: new List<Widget>.generate(12, (index) {
+        crossAxisCount: 3,
+        children: new List<Widget>.generate(9, (index) {
           return new GridTile(
             child: new Card(
-              color: Colors.blue.shade200,
+              color: Color(0xFF4E5685),
               child: new Center(
                 child: new Text('tile $index'),
               )

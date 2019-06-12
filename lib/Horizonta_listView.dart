@@ -16,9 +16,10 @@ class MainScreen extends StatelessWidget {
       //textAlign: TextAlign.center,
       //),
       //),
-      body: Container(
+    body: 
+      Container(      
         padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 30.0),
-        height: MediaQuery.of(context).size.height * 0.65,
+        height: MediaQuery.of(context).size.height * 0.55,
         child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: numbers.length,
@@ -34,7 +35,7 @@ class MainScreen extends StatelessWidget {
                     //coloar imagem externa
                     decoration: BoxDecoration(
                         image: DecorationImage(                          
-                            image: AssetImage("assets/imag1.jpeg",),
+                          image: AssetImage("assets/imag1.jpeg",),
                             fit: BoxFit.fill             //Coloquei Borda na imageem                            
                             )),
                   ),

@@ -5,11 +5,12 @@ class Menugeral extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-
-      color: Colors.grey[200],
-    child: Versiculo(
-      
-    ), 
+      color: Colors.blue,
+      child: Container(
+        width: 200,
+        height: 200,
+        child: Versiculo(),
+      ),
     );
   }
 }

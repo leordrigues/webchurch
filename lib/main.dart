@@ -1,13 +1,13 @@
 import 'package:app_igreja/Horizonta_listView.dart';
 import 'package:app_igreja/detail_bottom.dart';
-import 'package:app_igreja/mainmenu.dart';
+//import 'package:app_igreja/mainmenu.dart';
 import 'package:app_igreja/menugeral.dart';
 import 'package:flutter/material.dart';
-import 'mainmenu.dart';
+//import 'mainmenu.dart';
 import 'celula.dart';
 import 'pessoas.dart';
 import 'menugeral.dart';
-import 'versiculo.dart';
+//import 'versiculo.dart';
 
 void main() => runApp(MyApp());
 

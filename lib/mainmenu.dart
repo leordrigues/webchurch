@@ -8,10 +8,8 @@ import 'package:flutter/material.dart';
 class MainMenu extends StatelessWidget{
   @override
   Widget build(BuildContext context){
-    return new Scaffold(
-      //appBar: new AppBar(
-        //title: new Text('Tela Nova'),
-      //),
+    return new Scaffold(      
+      backgroundColor: Color(0xFFDAE8F5),    
       body: new GridView.count(
         crossAxisCount: 3,
         children: new List<Widget>.generate(9, (index) {

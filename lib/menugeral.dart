@@ -1,5 +1,5 @@
 import 'package:app_igreja/mainmenu.dart';
-import 'package:app_igreja/versiculo.dart';
+//import 'package:app_igreja/versiculo.dart';
 import 'package:flutter/material.dart';
 
 class Menugeral extends StatelessWidget {
@@ -8,19 +8,28 @@ class Menugeral extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
-        Expanded(flex: 2,
-        child: MainMenu(),//chamei a classe dos grid
+        Expanded(
+          flex: 2,
+          child: MainMenu(), //chamei a classe dos grid
         ),
-SizedBox(height: 10.0,),
-Expanded(flex: 1,
-child: Container( 
-  padding: EdgeInsets.all(30), 
-  child: Text("ola estou testando"),
-  color: Colors.yellow,
-  height: 50,
-  width: 50,
-),
-)
+        SizedBox(
+          height: 0.0,
+        ), //dividindo as colunas
+        Expanded(
+          flex: 1,
+          child: Container(
+            decoration: BoxDecoration(
+              color: Color(0xFFFE9F00), //cor do quadrado
+            borderRadius: BorderRadius.circular(40.0)
+            ),
+            padding: EdgeInsets.all(30),
+            child: Text(
+              "ola estou testando",
+              style: TextStyle(color: Colors.white),
+              textAlign: TextAlign.center,
+            ),            
+          ),
+        )
       ],
     );
   }

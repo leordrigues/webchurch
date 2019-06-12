@@ -9,7 +9,7 @@ class DetailBottom extends StatelessWidget {
             height: 180,
             color: Colors.grey [290],            
             child: ListView(  
-              padding: const EdgeInsets.only(bottom: 50,),            
+              padding: const EdgeInsets.only(bottom: 70,),            
               scrollDirection: Axis.horizontal,
               children: <Widget>[ 
                 Group(title: "Ola",color: Color(0xFFFE9F00), ),

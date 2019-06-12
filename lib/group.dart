@@ -13,7 +13,7 @@ class Group extends StatelessWidget {
           boxShadow: <BoxShadow>[  //COLOCAR UMA SOMBRA NO OBJETO 
             BoxShadow(
               color: Colors.black.withOpacity(0.5),
-              offset: Offset(6.0,6.0),
+              offset: Offset(5.5,5.5),
               blurRadius: 8     //ATE AQUI       
             )
           ],        
@@ -29,7 +29,7 @@ class Group extends StatelessWidget {
         style: TextStyle(
             fontSize: 19.0, fontWeight: FontWeight.w300, color: Colors.white),
       ),
-      alignment: Alignment(0.0, 0.5),
+      alignment: Alignment(0.0, 0.0),
     );
   }
 }

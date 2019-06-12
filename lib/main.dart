@@ -1,9 +1,13 @@
 import 'package:app_igreja/Horizonta_listView.dart';
 import 'package:app_igreja/detail_bottom.dart';
 import 'package:app_igreja/mainmenu.dart';
+import 'package:app_igreja/menugeral.dart';
 import 'package:flutter/material.dart';
 import 'mainmenu.dart';
 import 'celula.dart';
+import 'pessoas.dart';
+import 'menugeral.dart';
+import 'versiculo.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,7 +38,7 @@ class MyHomePage extends StatelessWidget {
         onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (BuildContext context) {
-                  return MainMenu(); //chamando a tela menu
+                  return Menugeral(); //chamando a tela menu
                 }));
               },
       ),
@@ -51,10 +55,10 @@ class MyHomePage extends StatelessWidget {
                 color: Colors.grey,
               ),
               onPressed: () {
-                //Navigator.push(context,
-                  //  MaterialPageRoute(builder: (BuildContext context) {
-                  //return MainMenu(); //chamando a tela Configuracao
-                //}));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (BuildContext context) {
+                  return Pessoas(); //chamando a tela Pessoas
+                }));
               },
             ),
             IconButton(

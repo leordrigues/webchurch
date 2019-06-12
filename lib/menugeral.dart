@@ -15,7 +15,7 @@ class Menugeral extends StatelessWidget {
               child: MainMenu(), //chamei a classe dos grid
             ),
             SizedBox(
-              height: 10.0,
+              height: 90.0,
             ), //dividindo as colunas
             Expanded(
               flex: 1,
@@ -23,11 +23,11 @@ class Menugeral extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Color(0xFFFE9F00), //cor do quadrado amarelo
                     borderRadius: BorderRadius.circular(30.0)),
-                padding: EdgeInsets.all(50),
+                padding: EdgeInsets.all(25),
                 child: Text(
-                  "testando",
-                  style: TextStyle(color: Colors.black),
-                  textAlign: TextAlign.center,
+                  " Mas graças a Deus, que nos dá a vitória por meio de nosso Senhor Jesus Cristo 1Coríntios 15:57  ",
+                  style: TextStyle(color: Colors.white, fontSize: 30 ),
+                  textAlign: TextAlign.center,                  
                 ),
               ),
             )

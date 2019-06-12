@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: Scaffold(body: MyHomePage()),
+      home: MyHomePage()
     );
   }
 }
@@ -36,11 +36,11 @@ class MyHomePage extends StatelessWidget {
         backgroundColor: Colors.green,
         child: const Icon(Icons.home),
         onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (BuildContext context) {
-                  return Menugeral(); //chamando a tela menu
-                }));
-              },
+          Navigator.push(context,
+              MaterialPageRoute(builder: (BuildContext context) {
+            return Menugeral(); //chamando a tela menu
+          }));
+        },
       ),
       bottomNavigationBar: BottomAppBar(
         shape: CircularNotchedRectangle(),

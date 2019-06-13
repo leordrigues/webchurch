@@ -16,13 +16,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-      ),
-      home: MyHomePage()
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.red,
+        ),
+        home: MyHomePage());
   }
 }
 
@@ -30,7 +29,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      backgroundColor: Color(0xFFDAE8F5),
+      backgroundColor: Color(0xFFE8E8F0),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.green,
@@ -92,16 +91,16 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
       body: Stack(
-        //COLOCAR UMA PILHA - PARTE DE CIMA APP
         children: <Widget>[
           Align(
-            alignment: Alignment.topCenter, //ALINHAMENTO GRUPOS
-            child: MainScreen(), //-aqui ele chamou a tela horizontal
+            alignment: Alignment.topCenter, // Retangulo azul
+            child: MainScreen(),
           ),
           Align(
             alignment: Alignment.bottomCenter, //ALINHAMENTO GRUPOS
             child: DetailBottom(),
           ),
+                  
         ],
       ),
     );

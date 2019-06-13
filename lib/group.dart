@@ -9,10 +9,10 @@ class Group extends StatelessWidget {
   Widget build(BuildContext context) {
     var boxDecoration = BoxDecoration(          
           borderRadius: BorderRadius.circular(19.0), //borda no objeto
-          color: color,
+          color: color,          
           boxShadow: <BoxShadow>[  //COLOCAR UMA SOMBRA NO OBJETO 
-            BoxShadow(
-              color: Colors.black.withOpacity(0.5),
+            BoxShadow(            
+              color: Colors.black.withOpacity(0.8),
               offset: Offset(5.5,5.5),
               blurRadius: 8     //ATE AQUI       
             )
@@ -20,10 +20,15 @@ class Group extends StatelessWidget {
           //border: Border.all(   //BORDA
           //width: 0.5,
           );
-    return Container(
-          width: 120,
-          margin: const EdgeInsets.symmetric(horizontal: 3), //Separação das colunas
-          decoration: boxDecoration,
+    return Container(      
+      decoration: BoxDecoration(            
+                        image: DecorationImage(                                                    
+                          image: AssetImage("assets/imag2.PNG",),
+                            fit: BoxFit.fill            //Coloquei Borda na imageem                            
+                            )),
+          width: 130,
+          margin: const EdgeInsets.symmetric(horizontal: 4), //Separação das colunas
+         // decoration: boxDecoration,
       child: Text(
         title,
         style: TextStyle(

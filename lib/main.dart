@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'celula.dart';
 import 'pessoas.dart';
 import 'menugeral.dart';
-//import 'versiculo.dart';
+//import 'telafoto.dart';
 
 void main() => runApp(MyApp());
 

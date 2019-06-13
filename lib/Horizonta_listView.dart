@@ -7,15 +7,8 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      //  appBar: AppBar(
-      //  centerTitle: true,
-      backgroundColor: Color(0xFFDAE8F5), //coloquei uma cor no appbar -forçada
-      //title: Text(
-      //'Aplicativo Igreja',
-      //textAlign: TextAlign.center,
-      //),
-      //),
+    return Scaffold(      
+      backgroundColor: Color(0xFFDAE8F5), //coloquei uma cor no appbar -forçada    
     body: 
       Container(      
         padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 30.0),

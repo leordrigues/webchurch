@@ -1,6 +1,5 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart' as prefix0;
 import 'package:flutter/widgets.dart';
 
 class MainScreen extends StatelessWidget {
@@ -17,7 +16,7 @@ class MainScreen extends StatelessWidget {
       body: Container(
         
         padding: EdgeInsets.symmetric(horizontal: 19.0, vertical: 30.0),
-        height: MediaQuery.of(context).size.height * 0.70,
+        height: MediaQuery.of(context).size.height * 0.65,
         child: ListView.builder(          
             scrollDirection: Axis.horizontal,
             itemCount: numbers.length,
@@ -27,9 +26,11 @@ class MainScreen extends StatelessWidget {
                 child: Card(                  
                   shape: RoundedRectangleBorder(
                       borderRadius:
-                          BorderRadius.circular(19.0)), //circular o Container                          
-                  color: Color(0xFF4E5685),// Quero essa cor #4E5685
-                  child: Container(                      
+                          BorderRadius.circular(19.0)), //circular o Container
+                  color: Color(0xFF4E5685), // Quero essa cor #4E5685
+                  child: Container(    
+                    child: Text("ola teste ola",
+                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30),),                                                        
                     margin: EdgeInsets.fromLTRB(10, 20, 10, 110),
                     decoration: BoxDecoration(
                         image: DecorationImage(

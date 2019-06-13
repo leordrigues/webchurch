@@ -17,24 +17,19 @@ class Group extends StatelessWidget {
               blurRadius: 8     //ATE AQUI       
             )
           ],        
-          //border: Border.all(   //BORDA
+          //border: Border.all( 
           //width: 0.5,
           );
-    return Container(      
-      decoration: BoxDecoration(            
-                        image: DecorationImage(                                                    
-                          image: AssetImage("assets/imag2.PNG",),
-                            fit: BoxFit.fill            //Coloquei Borda na imageem                            
-                            )),
-          width: 130,
-          margin: const EdgeInsets.symmetric(horizontal: 4), //Separação das colunas
-         // decoration: boxDecoration,
+    return  Container(
+          width: 120,
+          margin: const EdgeInsets.symmetric(horizontal: 3), //Separação das colunas
+          decoration: boxDecoration,
       child: Text(
         title,
         style: TextStyle(
             fontSize: 19.0, fontWeight: FontWeight.w300, color: Colors.white),
       ),
-      alignment: Alignment(0.0, 0.0),
+      alignment: Alignment(20.0, 0.0),
     );
   }
 }

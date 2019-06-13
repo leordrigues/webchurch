@@ -10,15 +10,15 @@ class DetailBottom extends StatelessWidget {
             height: 180,
             color: Colors.grey [290],            
             child: ListView(  
-              padding: const EdgeInsets.only(bottom: 70,),            
+              padding: const EdgeInsets.only(bottom: 60,),            
               scrollDirection: Axis.horizontal,
               children: <Widget>[ 
-                Group(title: "",color: Color(0xFFFE9F00),  ),
+                Group(title: "",color: Color(0xFFFE9F00),),
                 Group(title: "",color: Color(0xFF6ACA61),),
                 Group(title: "",color: Color(0xFF353A50),),
-                Group(title: "",color: Color(0xFF27337D),),
-                Group(title: "",color: Color(0xFFFE5440),),
-                Group(title: "",color: Colors.yellow,),
+               Group(title: "",color: Color(0xFF27337D),),
+                //Group(title: "",color: Color(0xFFFE5440),),
+               // Group(title: "",color: Colors.yellow,),
               ],
             ));
   }

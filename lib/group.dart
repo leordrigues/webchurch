@@ -14,14 +14,14 @@ class Group extends StatelessWidget {
             BoxShadow(            
               color: Colors.black.withOpacity(0.8),
               offset: Offset(5.5,5.5),
-              blurRadius: 8     //ATE AQUI       
+              blurRadius: 10     //ATE AQUI       
             )
           ],        
           //border: Border.all( 
           //width: 0.5,
           );
     return  Container(
-          width: 120,
+          width: 130,
           margin: const EdgeInsets.symmetric(horizontal: 3), //Separação das colunas
           decoration: boxDecoration,
       child: Text(

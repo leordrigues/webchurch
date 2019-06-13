@@ -7,7 +7,7 @@ class DetailBottom extends StatelessWidget {
     return  Container(
       
             //width: 0,
-            height: 180,
+            height: 200,
             color: Colors.grey [290],            
             child: ListView(  
               padding: const EdgeInsets.only(bottom: 60,),            

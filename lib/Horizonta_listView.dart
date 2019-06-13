@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' as prefix0;
 import 'package:flutter/widgets.dart';
 
 class MainScreen extends StatelessWidget {
@@ -26,9 +27,9 @@ class MainScreen extends StatelessWidget {
                 child: Card(                  
                   shape: RoundedRectangleBorder(
                       borderRadius:
-                          BorderRadius.circular(19.0)), //circular o Container
-                  color: Color(0xFF4E5685), // Quero essa cor #4E5685
-                  child: Container(                                                            
+                          BorderRadius.circular(19.0)), //circular o Container                          
+                  color: Color(0xFF4E5685),// Quero essa cor #4E5685
+                  child: Container(                      
                     margin: EdgeInsets.fromLTRB(10, 20, 10, 110),
                     decoration: BoxDecoration(
                         image: DecorationImage(

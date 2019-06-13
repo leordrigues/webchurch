@@ -14,10 +14,10 @@ class MainMenu extends StatelessWidget{
         crossAxisCount: 3,
         children: new List<Widget>.generate(9, (index) {
           return new GridTile(
-            child: new Card(
+            child: new Card(              
               color: Color(0xFF4E5685),
               child: new Center(
-                child: new Text('tile $index'),
+                child: Text('tile $index'),
               )
             ),
           );

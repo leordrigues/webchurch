@@ -8,6 +8,7 @@ import 'celula.dart';
 import 'pessoas.dart';
 import 'menugeral.dart';
 //import 'telafoto.dart';
+import 'usuario.dart';
 
 void main() => runApp(MyApp());
 
@@ -85,7 +86,12 @@ class MyHomePage extends StatelessWidget {
                 Icons.perm_identity,
                 color: Colors.grey,
               ),
-              onPressed: () {},
+              onPressed: () {                
+          Navigator.push(context,
+              MaterialPageRoute(builder: (BuildContext context) {
+            return Usuario(); //chamando a tela menu
+             }));
+              },
             ),
           ],
         ),

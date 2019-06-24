@@ -12,7 +12,7 @@ class Celula extends StatelessWidget {
       title: title,
       home: Scaffold(appBar: AppBar(
         title: Text(title),
-        backgroundColor: Color(0xFF4E5685),
+        backgroundColor: Color(0xFF008080),
         ),
         body: new ListView(
             shrinkWrap: true,

@@ -13,7 +13,7 @@ class Usuario extends StatelessWidget {
       ),
       home: Scaffold(
           appBar: AppBar(
-            backgroundColor: Color(0xFF4E5685),
+            backgroundColor: Color(0xFF008080),            
             title: Text("Conta de usuário"),
           ),
          body: HomeWidget()),
@@ -60,7 +60,7 @@ class HomeWidget extends StatelessWidget {
           ),
           Material(
             elevation: 8,
-            color: Color(0xFF9CA2D6),
+            color: Color(0xFF008080),
             borderRadius: BorderRadius.circular(40),
             child: InkWell(
               borderRadius: BorderRadius.circular(40),

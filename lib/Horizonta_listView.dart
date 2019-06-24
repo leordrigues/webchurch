@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart' as prefix0;
+//import 'package:flutter/material.dart' as prefix0;
 import 'package:flutter/widgets.dart';
 
 class MainScreen extends StatelessWidget {
@@ -28,8 +28,8 @@ class MainScreen extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.circular(19.0)), //circular o Container
-                  color: Color(0xFF4E5685), // Quero essa cor #4E5685
-                  child: ClipOval(
+                  color: Color(0xFF008080), // Quero essa cor #4E5685
+                  child: Center(
                     child: Container(
                       child: Image.network(
                           "https://s3.amazonaws.com/celula-uploads/posts/564ccc63bb55972a6763d897/f235b889/600"),

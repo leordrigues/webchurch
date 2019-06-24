@@ -1,8 +1,3 @@
-//import 'dart:collection';
-//import 'package:flutter/scheduler.dart';
-//import 'dart:convert';
-//import 'package:flutter/services.dart';
-//import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class MainMenu extends StatelessWidget{
@@ -14,12 +9,10 @@ class MainMenu extends StatelessWidget{
         crossAxisCount: 3,
         children: new List<Widget>.generate(9, (index) {
           return new GridTile(
-            child: new Card(              
-              color: Color(0xFF4E5685),
-              child: new Center(
-                child: Text('tile $index'),
-              )
-            ),
+            child: Card(              
+              color: Color(0xFF008080),
+              child: const Icon(Icons.home),               
+              )          
           );
         }),
       ),

@@ -8,41 +8,8 @@ class _MyHomePageState extends State<Pessoas> with TickerProviderStateMixin {
   AnimationController _controller;
   Animation<double> _animation;
 
-  void initState() {
-    super.initState();
-    _controller = new AnimationController(duration: 
-      const Duration(milliseconds: 246), vsync: this);
 
-    _animation = new CurvedAnimation(
-      parent: _controller,
-      curve: new Interval(0.0, 1.0, curve: Curves.linear),
-    );
-  }
 
-  void _move(DragUpdateDetails details) {
-    final double delta = details.primaryDelta / 304;
-    switch (Directionality.of(context)) {
-      case TextDirection.rtl:
-        _controller.value += delta;
-        break;
-      case TextDirection.ltr:
-        _controller.value -= delta;
-        break;
-    }
-  }  
-
-  void _handleDragEnd(DragEndDetails details) {
-    bool _isFlingGesture = -details.velocity.pixelsPerSecond.dx > 700;
-
-    if (_isFlingGesture) {
-      final double flingVelocity = details.velocity.pixelsPerSecond.dx;
-      _controller.fling(velocity: flingVelocity.abs() * 0.003333);
-    } else if (_controller.value < 0.4) {
-      _controller.reverse();
-    } else {
-      _controller.forward();
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -50,8 +17,7 @@ class _MyHomePageState extends State<Pessoas> with TickerProviderStateMixin {
       appBar: new AppBar(),
       body: new Center(
         child: new GestureDetector(
-          onHorizontalDragUpdate: _move,
-          onHorizontalDragEnd: _handleDragEnd,
+
           child: new Stack(
             children: <Widget>[
               new Positioned.fill(            
@@ -124,7 +90,7 @@ class _MyHomePageState extends State<Pessoas> with TickerProviderStateMixin {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      new Text('foo'),
+                      new Text('LEONARDO RODRIGUES MOREIRA'),
                     ],
                   ),
                 ),
